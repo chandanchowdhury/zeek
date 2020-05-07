@@ -22,6 +22,8 @@
 
 #include "broker/Data.h"
 
+namespace zeek::detail {
+
 const char* expr_name(BroExprTag t)
 	{
 	static const char* expr_names[int(NUM_EXPRS)] = {
@@ -5053,3 +5055,5 @@ bool expr_greater(const Expr* e1, const Expr* e2)
 	{
 	return e1->Tag() > e2->Tag();
 	}
+
+}

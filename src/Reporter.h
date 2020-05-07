@@ -74,7 +74,7 @@ public:
 
 	// Report a runtime error in evaluating a Bro script expression. This
 	// function will not return but raise an InterpreterException.
-	[[noreturn]] void ExprRuntimeError(const Expr* expr, const char* fmt, ...) __attribute__((format(printf, 3, 4)));
+	[[noreturn]] void ExprRuntimeError(const zeek::detail::Expr* expr, const char* fmt, ...) __attribute__((format(printf, 3, 4)));
 
 	// Report a runtime error in evaluating a Bro script expression. This
 	// function will not return but raise an InterpreterException.
