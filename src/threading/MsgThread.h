@@ -334,7 +334,7 @@ private:
 	bool child_sent_finish; // Child thread asked to be finished.
 	bool failed;	// Set to true when a command failed.
 
-	bro::Flare flare;
+	zeek::detail::Flare flare;
 };
 
 /**
